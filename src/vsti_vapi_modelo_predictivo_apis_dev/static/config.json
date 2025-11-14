@@ -1,0 +1,15 @@
+{
+    "global"               : {
+        "dsn"      : "impala-virtual-prd",
+        "parametros_lz"       : {
+            "prefijo"            : "modelo_",
+            "zona_procesamiento" : "proceso_apis",
+            "in_oozie"           : "resultados.reporte_flujos_oozie"
+        }    
+    },
+    "ExtractTransformLoad" : {
+        "tareas"                : [
+            {"nombre" : "ejecutar_modulos"            , "kwargs" : []}
+        ]
+    }
+}
